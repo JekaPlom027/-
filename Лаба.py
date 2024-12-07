@@ -42,7 +42,7 @@ class SQL:
         """ create a database connection to a SQLite database """
         conn = None
         try:
-            conn = sqlite3.connect(db_file)    # Підключення до файлу бази даних
+            conn = sqlite3.connect('Жаба-гадюка.db')    # Підключення до файлу бази даних
             print(sqlite3.version)             # Виведення версії SQLite
         except Error as e:
             print(e)                           # Виведення помилки, якщо вона виникла
